@@ -1,0 +1,168 @@
+.header{
+  display: flex;
+  height: 55px;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid;
+  border-color: rgb(211, 205, 205);
+
+  z-index: 100;
+}
+
+.head-start{
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+  
+}
+
+.youtube-logo{
+  height: 20px;
+  cursor: pointer;
+
+}
+
+.head-mid{
+  max-width: 500px;
+  margin: 0 35px 0 62px;
+
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.search-bar{
+  height: 34px;
+  flex: 1;
+  font-size: 16px;
+  border-radius: 2px;
+  border: 1px solid rgb(192, 192, 192);
+
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.search::placeholder{
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.search-box{
+  height: 40px;
+  width: 60px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(192, 192, 192);
+
+  margin-left: -1px;
+  margin-right: 10px;
+
+}
+
+.search-box,
+.voice-box,
+.upload-icon-container,
+.notifications{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-box .Tooltip,
+.voice-box .Tooltip,
+.upload-icon-container .Tooltip,
+.notifications .Tooltip{
+  font-size: 13px;
+
+  position: absolute;
+  background-color: rgb(130, 130, 130);
+  color: white;
+  padding: 4px 5px 4px 5px;
+  border-radius: 2px;
+  bottom: -36px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search-box:hover .Tooltip,
+.voice-box:hover .Tooltip,
+.upload-icon-container:hover .Tooltip,
+.notifications:hover .Tooltip{
+  opacity: 1;
+}
+
+.search-icon{
+  height: 25px;
+}
+
+.voice-box{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(241, 238, 238);
+}
+
+.voice-icon{
+  height: 24px;
+}
+
+.head-end{
+  /* background-color: lightpink; */
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.upload-icon{
+  height: 24px;
+}
+
+.youtube-apps-icon{
+  height: 24px;
+
+}
+
+.notifications-icon{
+  height: 24px;
+}
+
+.notifications{
+  position: relative;
+}
+
+.notifications-count{
+  position: absolute;
+  background-color: rgb(193, 52, 52);
+  color: white;
+  right: -5px;
+  top: -2px;
+  
+  font-size: 11px;
+  padding: 1.2px 4.5px 1.2px 4.5px;
+  border-radius: 10px;
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.my-channel-icon{
+  height: 32px;
+  border-radius: 16px;
+}
